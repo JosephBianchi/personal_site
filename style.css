@@ -194,3 +194,17 @@ div.bio-wrap {
   padding: 20px 0;
   color: #5C5D64;
 }
+
+.contact-wrapper p {
+  font-size: 20px;
+  font-weight: 350;
+  color: black;
+  line-height: 32px;
+}
+
+.contact-wrapper section {
+  width: 50%;
+  border: 3px solid green;
+  padding: 10px;
+  margin:auto;
+}
