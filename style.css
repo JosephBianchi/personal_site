@@ -208,3 +208,8 @@ div.bio-wrap {
   padding: 10px;
   margin:auto;
 }
+
+
+.card {
+  display: inline-block;
+}
