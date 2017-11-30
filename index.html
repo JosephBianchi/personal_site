@@ -1,55 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Joseph Bianchi</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <meta name="description:" content="Joseph Bianchi playing with responsive design and css Im from Toronto Canada full-stack developer">
+    <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
+    <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
+    <link rel="stylesheet" type="text/css" href="vendors/css/animate.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet" type="text/css">
+    <title>Joseph Bianchi</title>
 </head>
 <body>
 
-  <header>
-    <h1>Joseph Bianchi, Developer</h1>
-    <p><em>"I don’t need to know everything; I just need to know where to find it, when I need it."</em></p>
+  <header class="js--section-header">
+    <div class="logo">
+      <img src="resources/img/logo-min.jpg" alt="logo, giant head" class="logo">
+    </div>
+    <div class="hero-text-box">
+      <h1>Joseph Bianchi, Developer</h1>
+      <p><em>"I don’t need to know everything; I just need to know where to find it, when I need it."</em></p>
+    </div>
+    <nav>
+      <div class="row">
+        <ul class="main-nav js--main-nav">
+          <li><a class="js--scroll-to-header" href="#">Home</a></li>
+          <li><a class="js--scroll-to-port" href="#">Portfolio</a></li>
+          <li><a class="js--scroll-to-skills" href="#">Skillset</a></li>
+          <li><a class="js--scroll-to-contact" href="#">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
   </header>
 
-  <nav id="main">
-    <ul>
-      <li class="logo"><a href="#">TOP.</a></li>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="portfolio.html">Portfolio</a></li>
-      <li><a href="about.html">Skillset and Hobbies</a></li>
-      <li><a href="education.html">Education</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
+  <section class="section-portfolio js--section-portfolio" id="portfolio">
+    <div class="row">
+      <h2>Projects</h2>
+      <p class="long-copy">
+        Here are a few projects I've been working on &mdash; ranging from RESTful APIs to responsive design, and even full-stack web-apps. I'm always working on something new, and diving into new topics.
+      </p>
+    </div>
+    <div class="row js--wp-1">
+      <div class="col span-1-of-2 port-box">
+        <div class="portfolio-feature">
+          <h3><a target="_blank" href="http://joseph-bianchi.com/port-responsive-1">Food Delivery-Service</a></h3>
+          <img src="resources/img/omni.png" alt="">
+          <p>
+            Developed a responsive website for meal-delivery service.
+          </p>
+        </div>
+      </div>
+      <div class="col span-1-of-2 port-box">
+        <div class="portfolio-feature">
+          <h3><a target="_blank" href="https://stores-resful-api.herokuapp.com/">RESTful API &mdash; Python</a></h3>
+          <img src="resources/img/restapi.png" alt="">
+          <p>
+            Developed Python RESTful API with multiple endpoints. Built using the Flask framework. SQLite DB.
+          </p>
+        </div>
+      </div>
+      <div class="col span-1-of-2 port-box">
+        <div class="portfolio-feature">
+          <h3><a target="_blank" href="https://blooming-temple-73019.herokuapp.com/">Find Mentors in your area</a></h3>
+          <img src="resources/img/kaizen.png" alt="">
+          <p>
+            Developed a a ruby application encorporating Google Maps API. Built using the Ruby on Rails framework. Postgres DB.
+          </p>
+        </div>
+      </div>
+      <div class="col span-1-of-2 port-box">
+        <div class="portfolio-feature">
+          <h3><a target="_blank" href="#">Yelp Clone</a></h3>
+          <img src="resources/img/nodejs.png" alt="">
+          <p>
+            Developed a node.js aplication. Built using the Express framework. MongoDB.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <div class="site-wrap">
-    <section class="bio">
-      <h2>CLICK FOR BIOGRAPHY</h2>
-      <p>After studying International Accounting and Corporate Finance I expanded my knowledge about the intricacies of business processes after being hired on at StackAdapt (one of Toronto's leading Adtech start-ups) as a member of their sales team.<br><br> Working closely with the tech-team at StackAdapt - I continued to realize my passion for web development. I proceeded to immerse myself in the study of computer science and continued to add to my personal tech stack.<br><br> I'm currently working on a portfolio of projects, and have since hired myself on as a freelance developer.</p>
-    </section>
+  <section class="section-skills js--section-skills">
+    <section class="our-skills">
+            <div class="container">
+                <h2 class="text-center">Skills</h2>
+                <div class="skill-row">
+
+                    <!-- Start Progress Skills -->
+
+                    <div class="col-md-5">
+                        <div class="skills-progress">
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:65%">
+                                    Html5 / Css3
+                                </div>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:90%">
+                                    Ruby / Rails
+                                </div>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:60%">
+                                    Javascript
+                                </div>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                                    Python / Flask / Django
+                                </div>
+                            </div>
+
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:25%">
+                                    React
+                                </div>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:65%">
+                                    SQL
+                                </div>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:60%">
+                                    Databases
+                                </div>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                                    API Integration
+                                </div>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:45%">
+                                    node.js
+                                </div>
+                              </div>
 
 
-    <img class="stackadapt" src="https://cdn.betakit.com/wp-content/uploads/2016/01/StackAdapt-team-1050x510.png" class="align-left slide-in">
-
-    <h3>Under Construction - <i>Enjoy some Lorem Ipsum from the <a href="http://loremricksum.com/">Rick and Morty Ipsum Generator</a></i></h3>
-    <p>Then it's time to get your beak wet tonight playa! Snuffles was my slave name. You can call me Snowball, because my fur is pretty and white. Want to piss on him? Ew, Grandpa, so gross! You're talking about my mom!</p>
-
-    <img class="stand_up" src="https://scontent.fyyz1-1.fna.fbcdn.net/v/l/t1.0-9/12931286_1151066088340903_1709778352616748891_n.jpg?oh=d23f748f630afe6b48a2e01189521d69&oe=5A6C53F8" class="align-right slide-in">
 
 
-    <p>Snuffles want to be understood. Snuffles need to be understood. Rick, the only connection between your unquestionable intelligence and the sickness destroying your family is that everyone in your family, you included, use intelligence to justify sickness. You seem to alternate between viewing your own mind as an unstoppable force and as an inescapable curse. And I think it's because the only truly unapproachable concept for you is that it's your mind within your control. You chose to come here, you chose to talk to belittle my vocation, just as you chose to become a pickle. You are the master of your universe, and yet you are dripping with rat blood and feces. Your enormous mind literally vegetating by your own hand. I have no doubt that you would be bored senseless by therapy, the same way I'm bored when I brush my teeth and wipe my ass. Because the thing about repairing, maintaining, and cleaning is it's not an adventure. There's no way to do it so wrong you might die. It's just work. And the bottom line is, some people are okay going to work, and some people... well, some people would rather die. Each of us gets to choose. Because I don't respect therapy; because I'm a scientist; because I invent, transform, create, and destroy for a living, and when I don't like something about the world, I change it. And I don't think going to a rented office in a strip mall to listen to some agent of averageness explain which words mean which feelings has ever helped anyone do anything. I think it's helped a lot of people get comfortable and stop panicking, which is a state of mind we value in the animals we eat, but not something I want for myself. I'm not a cow, I'm a pickle... when I feel like it. You know my name, that's disarming</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+  </section>
 
 
-    <p>I don't like it here Morty. I can't abide bureaucracy. I don't like being told where to go and what to do. I consider it a violation. Did you get those seeds all the way up your butt? You created a day care for my dad? Isn't it obvious Morty? I froze him. Slow down!</p>
 
-    <img src="http://unsplash.it/400/400" class="align-right slide-in">
-
-    <p>There's pros and cons to every alternate timeline. Fun facts about this one – It's got giant, telepathic spiders, 11 9/11s, and the best ice cream in the multiverse! He's not a hot girl. He can't just bail on his life and set up shop in someone else's. I took your family? Who do you think had taken more from them when you shot 2 God-damn!</p>
-  </div>
+  <section class="section-contact js--section-contact">
 
 
-</body>
-<footer><script src="script.js"></script></footer>
+
+    <div class="container">
+
+      <div class="info-card-container">
+
+          <div class="info-card">
+
+              <div class="info-card__image-exposure info-card__content">
+                  <div class="info-card__image-exposure--blend">
+                  </div>
+                  <div class="info-card__image-exposure__item">
+                  </div>
+
+              </div>
+
+              <div class="info-card__bio info-card__content">
+                  <h2>Contact:</h2>
+                  <h3><a href="mailto:joseph.bianchi3@gmail.com">joseph.bianchi3@gmail.com</a></h3>
+
+
+              </div>
+
+          </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <footer></footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/selectivizr/1.0.2/selectivizr-min.js"></script>
+  <script src="vendors/js/jquery.waypoints.min.js"></script>
+  <script src="resources/js/script.js"></script>
+
+  </body>
+
 </html>
